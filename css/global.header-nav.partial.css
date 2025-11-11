@@ -1,0 +1,30 @@
+.header-nav {
+    background-color: var(--background-color);
+    .header-nav__container {
+        .header-nav__unordered-list {
+            list-style-type: none;
+            
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .header-nav__list:first-child {
+                margin-right: auto;
+            }
+
+            
+            .header-nav__link {
+                color: var(--text-main-color);
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 600;
+                
+                .header-nav__link-img {
+                    width: 196px;
+                    height: auto;
+                }
+            }
+            
+        }
+    }
+}
