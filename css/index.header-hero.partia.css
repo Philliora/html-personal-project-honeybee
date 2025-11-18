@@ -1,7 +1,7 @@
 .header-hero {
     background-image: url(../img/header-hero-background.jpg);
     background-size: cover;
-    background-position: 10px center;
+    background-position: center;
     background-repeat: no-repeat;
     padding: 130px 0;
     @media (min-width: 1200px) {
@@ -11,12 +11,16 @@
     }
     .header-hero__container {
         .header-hero__items {
-            padding: 0 15px;
-            width: 100%;
+            padding: 0 25px;
             overflow-wrap: break-word;
             word-wrap: break-word;
+            display: flex;
+            flex-direction: column;
+            @media (min-width: 1200px) {
+                padding: 0 15px;
+                width: 50%;
+            }
             .header-hero__text-accent{
-
                 font-size: 14px;
                 font-weight: 700;
                 color: var(--accent-color);
@@ -26,16 +30,36 @@
                 color: var(--text-title-color);
                 font-size: 62px;
                 font-weight: 700;
+                position: relative;
+                margin-top: 15px;
                 @media (min-width: 1200px) {
                     font-size: 110px;
                 }
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 28px;
+                    height: 4px;
+                    background-color: var(--accent-color);
+                    margin: 15px 0;
+                }
             }
+            
             .header-hero__text-discription {
                 font-size: 18px;
+                line-height: 28.8px;
                 color: var(--text-main-color);
             }
             .header-hero__anchor-link {
-
+                color: var(--base-white-color);
+                background-color: var(--accent-color);
+                text-decoration: none;
+                font-size: 16.5px;
+                font-weight: 700;
+                padding: 15px 40px;
+                border-radius: 10px;
+                max-width: 156px;
+                margin-top: 40px;
             }
         }
     }
